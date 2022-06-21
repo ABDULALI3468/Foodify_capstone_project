@@ -1,4 +1,96 @@
-.heading {
-  font-size: 50px;
-  color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --text-color-1: #f0f9cf;
+  --text-color-2: #23832b;
+  --text-color-3: #9cb445;
+  --bg-color: #f0f9cf;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+nav .nav-items {
+  display: flex;
+  position: fixed;
+  height: 15vh;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.item a {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 0 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 7px;
+  border-radius: 5px;
+  background-color: var(--text-color-3);
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--text-color-2);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #c8e073;
+  padding: 20px;
+}
+
+.footer a {
+  color: #2a7703;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transform: scale(1.2, 1.2);
 }

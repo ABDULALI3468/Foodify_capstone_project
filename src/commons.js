@@ -80,3 +80,5 @@ export const scaleInstructionContainer = (element) => {
 
   element.previousElementSibling.classList.toggle('expand');
 };
+
+export const toggleOverflow = () => Elements.body.classList.toggle('no-overflow');

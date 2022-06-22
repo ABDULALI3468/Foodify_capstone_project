@@ -2,7 +2,8 @@ import {
   appendIngredient,
   filterIngredients,
   renderPopup,
-  ldsEllipsis,
+  ldsEllipsis, 
+  toggleOverflow, 
 } from './commons.js';
 import {
   $select,
@@ -28,6 +29,8 @@ const listIngredients = async (dataId) => {
 };
 
 export const showPopup = async (target) => {
+  toggleOverflow();
+
   const wrapper = createElement('div');
   wrapper.className = 'popup-wrapper';
 
@@ -43,6 +46,8 @@ export const showPopup = async (target) => {
 
 export const closePopup = ({ parentElement }) => {
   const { parentElement: popup } = parentElement.parentElement;
+
   popup.remove();
+  toggleOverflow();
 };
 

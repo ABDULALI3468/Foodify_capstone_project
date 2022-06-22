@@ -73,3 +73,10 @@ export const appendIngredient = (measure, item, list) => {
 export const filterIngredients = (recipe) => Object.entries(recipe).filter(
   ([key, value]) => key.includes('strIngredient') && value !== null && value !== ''
 );
+
+export const scaleInstructionContainer = (element) => {
+  const { textContent: value } = element;
+  element.textContent = value.includes('less') ? 'Read more...' : 'Show less';
+
+  element.previousElementSibling.classList.toggle('expand');
+};

@@ -1,0 +1,233 @@
+.no-overflow {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation: comment 400ms;
+  -webkit-animation: comment 400ms;
+}
+
+.popup-wrapper > div {
+  padding: 15px;
+}
+
+@keyframes comment {
+  from {
+    top: -30px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes comment {
+  from {
+    top: -30px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.popup-wizard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 15px 30px;
+  border: 2px solid #27272735;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* popup buttons */
+
+.btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none;
+  box-shadow: 0 1px 8px #00000052;
+}
+
+.popup-x-btn {
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  background-image: url("./images/popup-x-btn.svg");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* comment-btn */
+
+/*  */
+
+.recipe-instructions .btn {
+  color: blue;
+  margin: 2px 0;
+}
+
+/* recipe-image */
+
+.recipe-image {
+  max-height: 200px;
+  align-self: center;
+  border-radius: 4px;
+}
+
+/* recipe-heading */
+
+.recipe-title {
+  text-align: center;
+}
+
+/* recipe taxonomy */
+
+.recipe-taxonomy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* instructions */
+
+.recipe-instructions,
+.recipe-ingredients {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+}
+
+.recipe-instructions h3,
+.recipe-ingredients h3 {
+  padding-bottom: 10px;
+}
+
+.recipe-instructions p {
+  font-size: 13px;
+  line-height: 22px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.recipe-instructions p.expand {
+  height: 100% !important;
+}
+
+/* recipe ingredients */
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ingredient-item {
+  font-size: 13px;
+  padding: 2px 10px;
+  background: white;
+  border-radius: 5px;
+}
+
+.lds-loader {
+  position: relative;
+  height: inherit;
+}
+
+.lds-loader>div {
+  position: absolute;
+  top: calc(50% - 9px);
+  right: calc(50% - 39px);
+}
+
+.lds-dots {
+  position: relative;
+  width: 78px;
+  height: 18px;
+}
+
+.lds-dots div {
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #27272790;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-dots div:nth-child(1) {
+  left: 8px;
+  animation: lds-dots1 0.6s infinite;
+}
+
+.lds-dots div:nth-child(2) {
+  left: 8px;
+  animation: lds-dots2 0.6s infinite;
+}
+
+.lds-dots div:nth-child(3) {
+  left: 32px;
+  animation: lds-dots2 0.6s infinite;
+}
+
+.lds-dots div:nth-child(4) {
+  left: 56px;
+  animation: lds-dots3 0.6s infinite;
+}
+
+@keyframes lds-dots1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-dots3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-dots2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}

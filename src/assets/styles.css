@@ -20,7 +20,7 @@ body {
 
 nav .nav-items {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   height: 15vh;
   flex-direction: row;
   top: 0;
@@ -53,7 +53,7 @@ nav .nav-items {
 
 .nav-link::after {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   width: 50%;
   height: 7px;
   border-radius: 5px;
@@ -75,7 +75,7 @@ nav .nav-items {
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   text-align: center;

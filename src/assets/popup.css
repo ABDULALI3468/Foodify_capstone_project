@@ -1,3 +1,11 @@
+/* dymmy code to be removed */
+
+.trigger {
+  margin: 100px;
+}
+
+/* ***** */
+
 .no-overflow {
   overflow: hidden;
 }
@@ -7,6 +15,7 @@
 }
 
 .popup-wrapper {
+  z-index: 999;
   position: fixed;
   top: 0;
   width: 100vw;

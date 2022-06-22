@@ -90,10 +90,6 @@
   background-repeat: no-repeat;
 }
 
-/* comment-btn */
-
-/*  */
-
 .recipe-instructions .btn {
   color: blue;
   margin: 2px 0;
@@ -169,7 +165,7 @@
   height: inherit;
 }
 
-.lds-loader>div {
+.lds-loader > div {
   position: absolute;
   top: calc(50% - 9px);
   right: calc(50% - 39px);

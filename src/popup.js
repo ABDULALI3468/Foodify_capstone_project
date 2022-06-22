@@ -2,8 +2,8 @@ import {
   appendIngredient,
   filterIngredients,
   renderPopup,
-  ldsEllipsis, 
-  toggleOverflow, 
+  ldsEllipsis,
+  toggleOverflow,
 } from './commons.js';
 import {
   $select,
@@ -13,20 +13,18 @@ import {
 } from './elements.js';
 import { RECIPE_URL } from './apis.js';
 
-const listIngredients = async (dataId) => {
-  return fetch(RECIPE_URL + dataId)
-    .then((res) => res.json())
-    .then(({ meals }) => {
-      const [recipe] = meals;
-      const popup = renderPopup(recipe);
-      const list1 = $select('.ingredients-list', popup);
+const listIngredients = async (dataId) => fetch(RECIPE_URL + dataId)
+  .then((res) => res.json())
+  .then(({ meals }) => {
+    const [recipe] = meals;
+    const popup = renderPopup(recipe);
+    const list1 = $select('.ingredients-list', popup);
 
-      filterIngredients(recipe)
-        .forEach(([, value], j) => appendIngredient(recipe[`strMeasure${j + 1}`], value, list1));
+    filterIngredients(recipe)
+      .forEach(([, value], j) => appendIngredient(recipe[`strMeasure${j + 1}`], value, list1));
 
-      return popup;
-    });
-};
+    return popup;
+  });
 
 export const showPopup = async (target) => {
   toggleOverflow();
@@ -50,4 +48,3 @@ export const closePopup = ({ parentElement }) => {
   popup.remove();
   toggleOverflow();
 };
-

@@ -4,7 +4,7 @@ const INVOLVEMENT_API = 'https://us-central1-involvement-api.cloudfunctions.net/
 
 export const RECIPE_URL = 'https://themealdb.com/api/json/v1/1/lookup.php?i=';
 
-export const COMMENT_URL = INVOLVEMENT_API + API_ID + '/comments?item_id=';
+export const COMMENT_URL = `${INVOLVEMENT_API + API_ID}/comments?item_id=`;
 
 export const postData = (url, data = {}) => fetch(url, {
   method: 'POST',

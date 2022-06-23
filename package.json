@@ -1,7 +1,7 @@
 {
   "name": "foodify_capstone_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -47,5 +47,8 @@
   },
   "dependencies": {
     "npm": "^8.12.1"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

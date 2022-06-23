@@ -18,6 +18,10 @@ body {
   background-color: var(--bg-color);
 }
 
+ul {
+  list-style: none;
+}
+
 nav .nav-items {
   display: flex;
   position: fixed;
@@ -30,7 +34,6 @@ nav .nav-items {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  list-style: none;
 }
 
 .item a {

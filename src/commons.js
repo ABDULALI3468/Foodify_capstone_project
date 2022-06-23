@@ -24,7 +24,16 @@ export const flagTrigger = (trigger) => {
   $select('.lds-dots', trigger).classList.toggle('hidden');
 };
 
+export const commentCounter = (num, lookupTree) => {
+  const counter = $select('.comments-wrapper span', lookupTree);
+  const count = parseInt(counter.textContent, 10) + num;
+  counter.textContent = count;
+
+  return count;
+};
+
 export const renderPopup = ({
+  idMeal,
   strMeal,
   strMealThumb,
   strArea,
@@ -51,8 +60,34 @@ export const renderPopup = ({
     + '<h3>Ingredients</h3>'
     + '<div class="ingredients-list"></div>'
     + '</div>'
+    + '<div class="comments-wrapper">'
+    + '<h3>Comments (<span>0</span>)</h3>'
+    + '<ul class="comments-list"></ul>'
+    + '</div>'
+    + '<div class="comment-form">'
+    + `<form action="#" target_id="${idMeal}">`
+    + '<h3>Add Comment</h3>'
+    + '<input type="text" name="user" class="field" maxlength="40" placeholder="Your name" required>'
+    + '<textarea name="comment" class="field" maxlength="200" placeholder="Your comment" required></textarea>'
+    + '<button type="submit" class="btn comment-btn">'
+    + '<span>Comment</span>'
+    + '<div class="lds-dots hidden">'
+    + '<div></div><div></div><div></div><div></div>'
+    + '</div>'
+    + '</button>'
+    + '</form>'
+    + '</div>'
     + '</div>'
   );
+  return element;
+};
+
+export const renderComment = ({ comment, username, creation_date }) => {
+  const element = createElement('li');
+
+  element.className = 'comment-item';
+  element.textContent = `${creation_date}  @${username}: ${comment}`;
+
   return element;
 };
 
@@ -79,5 +114,7 @@ export const scaleInstructionContainer = (element) => {
 
   element.previousElementSibling.classList.toggle('expand');
 };
+
+export const sortByDate = ({ creation_date: a }, { creation_date: b }) => new Date(b) - new Date(a);
 
 export const toggleOverflow = () => Elements.body.classList.toggle('no-overflow');

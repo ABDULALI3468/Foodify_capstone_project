@@ -1,8 +1,8 @@
 import { likeCreator, likeFetcher } from './likes.js';
-// import recipieCounter from "./recipieCounter.js";
+import recipieCounter from './recipieCounter.js';
 
 const recipies = document.querySelector('.recipies');
-// const recipesSection = document.querySelector("#recipesSection");
+const recipesSection = document.querySelector('#recipesSection');
 
 const displayCards = async () => {
   fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=British')
@@ -26,6 +26,7 @@ const displayCards = async () => {
       recipies.innerHTML = card;
       likeFetcher();
       likeCreator();
+      recipieCounter(data.meals, recipesSection);
     });
 };
 

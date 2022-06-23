@@ -107,6 +107,6 @@ export const scaleInstructionContainer = (element) => {
   element.previousElementSibling.classList.toggle('expand');
 };
 
-export const sortByDate = (a, b) => new Date(a) - new Date(b);
+export const sortByDate = ({ creation_date: a }, { creation_date: b }) => new Date(b) - new Date(a);
 
 export const toggleOverflow = () => Elements.body.classList.toggle('no-overflow');

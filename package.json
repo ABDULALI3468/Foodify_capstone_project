@@ -3,11 +3,7 @@
     "version": "1.0.0",
     "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
     "main": "index.js",
-    "resolutions": {
-      "node-sass": "https://registry.npmjs.org/node-sass/-/node-sass-7.0.0.tgz"
-    },
     "scripts": {
-      "preinstall": "npx npm-force-resolutions",
       "test": "jest",
       "watch": "jest --watchAll",
       "start": "webpack-dev-server --config webpack.config.js --open",

@@ -1,8 +1,8 @@
-import { 
+import {
   renderComment,
-  sortByDate, 
-  flagTrigger, 
-  commentCounter 
+  sortByDate,
+  flagTrigger,
+  commentCounter,
 } from './commons.js';
 import { $select, $getAttrib } from './elements.js';
 import { COMMENT_URL, postData } from './apis.js';

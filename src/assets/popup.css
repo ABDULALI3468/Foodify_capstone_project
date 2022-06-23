@@ -199,7 +199,7 @@
 
 .comment-form .field:focus {
   outline: none;
-  border-color: #0000ff;
+  border-color: #00f;
 }
 
 .comment-form textarea {

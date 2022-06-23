@@ -4,6 +4,9 @@
 
 > This is a website which showcases the top notch food and its recipes from all over the world from Britian to Australia , from veg to meat. It will take your response in the from of likes and comments.
 
+## LIVE DEMO
+- [Go checkout the Live Demo](https://abdulali3468.github.io/Foodify_capstone_project/)
+
 ## Built With
 
 - HTML5

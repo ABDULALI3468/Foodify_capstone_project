@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/assets/popup.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/assets/popup.css ***!
+  \********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./images/popup-x-btn.svg */ \"./src/assets/images/popup-x-btn.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* dymmy code to be removed */\\r\\n\\r\\n.trigger {\\r\\n  margin: 100px;\\r\\n}\\r\\n\\r\\n/* ***** */\\r\\n\\r\\n.no-overflow {\\r\\n  overflow: hidden;\\r\\n}\\r\\n\\r\\n.hidden {\\r\\n  display: none !important;\\r\\n}\\r\\n\\r\\n.popup-wrapper {\\r\\n  z-index: 999;\\r\\n  position: fixed;\\r\\n  top: 0;\\r\\n  width: 100vw;\\r\\n  height: 100vh;\\r\\n  overflow-y: auto;\\r\\n  background: transparent;\\r\\n  backdrop-filter: blur(5px);\\r\\n  -webkit-backdrop-filter: blur(5px);\\r\\n  animation: comment 400ms;\\r\\n  -webkit-animation: comment 400ms;\\r\\n}\\r\\n\\r\\n.popup-wrapper > div {\\r\\n  padding: 15px;\\r\\n}\\r\\n\\r\\n@keyframes comment {\\r\\n  from {\\r\\n    top: -30px;\\r\\n  }\\r\\n\\r\\n  to {\\r\\n    top: 0;\\r\\n  }\\r\\n}\\r\\n\\r\\n@-webkit-keyframes comment {\\r\\n  from {\\r\\n    top: -30px;\\r\\n  }\\r\\n\\r\\n  to {\\r\\n    top: 0;\\r\\n  }\\r\\n}\\r\\n\\r\\n.popup-wizard {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  gap: 24px;\\r\\n  margin: 0 auto;\\r\\n  max-width: 700px;\\r\\n  padding: 15px 30px;\\r\\n  border: 2px solid #27272735;\\r\\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);\\r\\n  border-radius: 8px;\\r\\n}\\r\\n\\r\\n/* popup buttons */\\r\\n\\r\\n.btn {\\r\\n  background: none;\\r\\n  cursor: pointer;\\r\\n  border: none;\\r\\n  padding: 2px 5px;\\r\\n  border-radius: 4px;\\r\\n}\\r\\n\\r\\n.btn:focus,\\r\\n.btn:hover {\\r\\n  outline: none;\\r\\n  box-shadow: 0 1px 8px #00000052;\\r\\n}\\r\\n\\r\\n.popup-x-btn {\\r\\n  width: 30px;\\r\\n  height: 30px;\\r\\n  align-self: flex-end;\\r\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n  background-size: 20px;\\r\\n  background-position: center;\\r\\n  background-repeat: no-repeat;\\r\\n}\\r\\n\\r\\n.recipe-instructions .btn {\\r\\n  color: blue;\\r\\n  margin: 2px 0;\\r\\n}\\r\\n\\r\\n/* recipe-image */\\r\\n\\r\\n.recipe-image {\\r\\n  max-height: 200px;\\r\\n  align-self: center;\\r\\n  border-radius: 4px;\\r\\n}\\r\\n\\r\\n/* recipe-heading */\\r\\n\\r\\n.recipe-title {\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n/* recipe taxonomy */\\r\\n\\r\\n.recipe-taxonomy {\\r\\n  display: flex;\\r\\n  flex-wrap: wrap;\\r\\n  justify-content: space-evenly;\\r\\n  width: 100%;\\r\\n  gap: 10px;\\r\\n  font-size: 14px;\\r\\n}\\r\\n\\r\\n/* instructions */\\r\\n\\r\\n.recipe-instructions,\\r\\n.recipe-ingredients {\\r\\n  padding: 10px;\\r\\n  border-radius: 8px;\\r\\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);\\r\\n}\\r\\n\\r\\n.recipe-instructions h3,\\r\\n.recipe-ingredients h3 {\\r\\n  padding-bottom: 10px;\\r\\n}\\r\\n\\r\\n.recipe-instructions p {\\r\\n  font-size: 13px;\\r\\n  line-height: 22px;\\r\\n  height: 40px;\\r\\n  overflow: hidden;\\r\\n}\\r\\n\\r\\n.recipe-instructions p.expand {\\r\\n  height: 100% !important;\\r\\n}\\r\\n\\r\\n/* recipe ingredients */\\r\\n\\r\\n.ingredients-list {\\r\\n  display: flex;\\r\\n  flex-wrap: wrap;\\r\\n  gap: 5px;\\r\\n}\\r\\n\\r\\n.ingredient-item {\\r\\n  font-size: 13px;\\r\\n  padding: 2px 10px;\\r\\n  background: white;\\r\\n  border-radius: 5px;\\r\\n}\\r\\n\\r\\n.lds-loader {\\r\\n  position: relative;\\r\\n  height: inherit;\\r\\n}\\r\\n\\r\\n.lds-loader > div {\\r\\n  position: absolute;\\r\\n  top: calc(50% - 9px);\\r\\n  right: calc(50% - 39px);\\r\\n}\\r\\n\\r\\n.lds-dots {\\r\\n  position: relative;\\r\\n  width: 78px;\\r\\n  height: 18px;\\r\\n}\\r\\n\\r\\n.lds-dots div {\\r\\n  position: absolute;\\r\\n  top: 4px;\\r\\n  width: 10px;\\r\\n  height: 10px;\\r\\n  border-radius: 50%;\\r\\n  background: #27272790;\\r\\n  animation-timing-function: cubic-bezier(0, 1, 1, 0);\\r\\n}\\r\\n\\r\\n.lds-dots div:nth-child(1) {\\r\\n  left: 8px;\\r\\n  animation: lds-dots1 0.6s infinite;\\r\\n}\\r\\n\\r\\n.lds-dots div:nth-child(2) {\\r\\n  left: 8px;\\r\\n  animation: lds-dots2 0.6s infinite;\\r\\n}\\r\\n\\r\\n.lds-dots div:nth-child(3) {\\r\\n  left: 32px;\\r\\n  animation: lds-dots2 0.6s infinite;\\r\\n}\\r\\n\\r\\n.lds-dots div:nth-child(4) {\\r\\n  left: 56px;\\r\\n  animation: lds-dots3 0.6s infinite;\\r\\n}\\r\\n\\r\\n@keyframes lds-dots1 {\\r\\n  0% {\\r\\n    transform: scale(0);\\r\\n  }\\r\\n\\r\\n  100% {\\r\\n    transform: scale(1);\\r\\n  }\\r\\n}\\r\\n\\r\\n@keyframes lds-dots3 {\\r\\n  0% {\\r\\n    transform: scale(1);\\r\\n  }\\r\\n\\r\\n  100% {\\r\\n    transform: scale(0);\\r\\n  }\\r\\n}\\r\\n\\r\\n@keyframes lds-dots2 {\\r\\n  0% {\\r\\n    transform: translate(0, 0);\\r\\n  }\\r\\n\\r\\n  100% {\\r\\n    transform: translate(24px, 0);\\r\\n  }\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/assets/popup.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/assets/styles.css":
 /*!*********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/assets/styles.css ***!
   \*********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".heading {\\r\\n  font-size: 50px;\\r\\n  color: aqua;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/assets/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Courgette&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);\"]);\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* eslint-disable */\\r\\n\\r\\n:root {\\r\\n  --text-color-1: #f0f9cf;\\r\\n  --text-color-2: #23832b;\\r\\n  --text-color-3: #9cb445;\\r\\n  --bg-color: #f0f9cf;\\r\\n}\\r\\n\\r\\n* {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n  box-sizing: border-box;\\r\\n  font-family: \\\"Poppins\\\", sans-serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  background-color: var(--bg-color);\\r\\n}\\r\\n\\r\\n.main_img {\\r\\n  margin-top: 13vh;\\r\\n  width: 100vw;\\r\\n  height: auto;\\r\\n}\\r\\n\\r\\n.tagline h2 {\\r\\n  font-size: 3.5rem;\\r\\n  text-align: center;\\r\\n  color: var(--text-color-2);\\r\\n  letter-spacing: 2px;\\r\\n  font-weight: 500;\\r\\n  font-family: \\\"Courgette\\\", cursive;\\r\\n  margin-top: -170px;\\r\\n  margin-bottom: 40px;\\r\\n}\\r\\n\\r\\nnav .nav-items {\\r\\n  background-color: var(--bg-color);\\r\\n  display: flex;\\r\\n  position: fixed;\\r\\n  height: 13vh;\\r\\n  flex-direction: row;\\r\\n  top: 0;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  z-index: 10;\\r\\n  align-items: center;\\r\\n  justify-content: center;\\r\\n  gap: 1rem;\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\n.item a {\\r\\n  font-size: 1.5rem;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.nav-link {\\r\\n  text-decoration: none;\\r\\n  position: relative;\\r\\n  display: inline-block;\\r\\n  margin: 0 0.75rem;\\r\\n  font-size: 1rem;\\r\\n  letter-spacing: 0.5px;\\r\\n  color: rgb(49, 49, 49);\\r\\n  font-weight: 500;\\r\\n  opacity: 0.9;\\r\\n  transition: 0.3s;\\r\\n}\\r\\n\\r\\n.nav-link::after {\\r\\n  content: \\\"\\\";\\r\\n  position: absolute;\\r\\n  width: 50%;\\r\\n  height: 7px;\\r\\n  border-radius: 5px;\\r\\n  background-color: var(--text-color-3);\\r\\n  bottom: -10px;\\r\\n  left: 0;\\r\\n  z-index: -1;\\r\\n  opacity: 0;\\r\\n  transition: 0.3s;\\r\\n}\\r\\n\\r\\n.nav-link:hover {\\r\\n  color: var(--text-color-2);\\r\\n}\\r\\n\\r\\n.nav-link:hover::after {\\r\\n  width: 100%;\\r\\n  opacity: 1;\\r\\n}\\r\\n\\r\\n.footer {\\r\\n  width: 100%;\\r\\n  text-align: center;\\r\\n  background-color: #c8e073;\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\n.footer a {\\r\\n  color: #2a7703;\\r\\n  text-decoration: none;\\r\\n  transition: 0.2s;\\r\\n}\\r\\n\\r\\n.footer a:hover {\\r\\n  cursor: pointer;\\r\\n  font-size: 1.5rem;\\r\\n  transform: scale(1.2, 1.2);\\r\\n}\\r\\n\\r\\n.footerContact {\\r\\n  position: absolute;\\r\\n  bottom: 0;\\r\\n}\\r\\n\\r\\n.card_container .recipies {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: center;\\r\\n  flex-wrap: wrap;\\r\\n}\\r\\n\\r\\n.card {\\r\\n  width: 300px;\\r\\n  height: auto;\\r\\n  margin: 40px;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  padding: 1rem 0.5rem;\\r\\n  border: 1px solid #fff;\\r\\n  border-radius: 25px;\\r\\n  background: #fff;\\r\\n  box-shadow: rgb(50 50 93 / 25%) 0 6px 12px -2px, rgb(0 0 0 / 30%) 0 3px 7px -3px;\\r\\n}\\r\\n\\r\\n.card-img img {\\r\\n  width: 100%;\\r\\n  border-radius: 20px;\\r\\n}\\r\\n\\r\\n.card-info {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-content: flex-start;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.card-info h2 {\\r\\n  font-family: \\\"Patrick Hand\\\", cursive;\\r\\n  color: var(--text-color-3);\\r\\n  font-size: 2rem;\\r\\n  letter-spacing: 2px;\\r\\n}\\r\\n\\r\\n.card-info ul {\\r\\n  display: flex;\\r\\n  margin-top: 5%;\\r\\n  justify-content: space-between;\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\n.comment-btn {\\r\\n  padding: 5% 15%;\\r\\n  font-family: \\\"Patrick Hand\\\", cursive;\\r\\n  font-size: 1.3rem;\\r\\n  color: var(--text-color-1);\\r\\n  background-color: var(--text-color-2);\\r\\n  border-radius: 15px;\\r\\n  border: 1px solid var(--text-color-2);\\r\\n  cursor: pointer;\\r\\n  transition: 0.3s;\\r\\n}\\r\\n\\r\\n.comment-btn:hover {\\r\\n  background-color: #236128;\\r\\n}\\r\\n\\r\\n.like-btn {\\r\\n  background: none;\\r\\n  border: none;\\r\\n  color: var(--text-color-3);\\r\\n  font-size: 1.7rem;\\r\\n  margin-right: 0.5rem;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n.like-btn .fa-heart {\\r\\n  margin-right: 0.75rem;\\r\\n}\\r\\n\\r\\n.contact {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n  text-align: center;\\r\\n  border: 3px solid var(--text-color-2);\\r\\n  border-radius: 20px;\\r\\n  padding: 35px;\\r\\n  position: absolute;\\r\\n  bottom: 25%;\\r\\n  left: 25%;\\r\\n  right: 25%;\\r\\n}\\r\\n\\r\\n.contactHeading1 {\\r\\n  color: var(--text-color-2);\\r\\n}\\r\\n\\r\\n.contactHeading2 {\\r\\n  width: 70%;\\r\\n  color: var(--text-color-2);\\r\\n  font-size: 25px;\\r\\n}\\r\\n\\r\\n.contactDetails {\\r\\n  list-style-type: none;\\r\\n  color: var(--text-color-2);\\r\\n}\\r\\n\\r\\n.contactDetails li {\\r\\n  font-size: 1.5rem;\\r\\n  color: var(--text-color-2);\\r\\n}\\r\\n\\r\\n.contact-icon {\\r\\n  font-size: 1.5rem;\\r\\n  color: var(--text-color-2);\\r\\n  padding: 0 0 0 5px;\\r\\n}\\r\\n\\r\\n.fa-brands,\\r\\n.fab {\\r\\n  font-weight: 400;\\r\\n}\\r\\n\\r\\n.hidden {\\r\\n  display: none;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/assets/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -30,6 +40,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  }\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://foodify_capstone_project/./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
 /*!**************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
@@ -37,6 +57,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://foodify_capstone_project/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/assets/popup.css":
+/*!******************************!*\
+  !*** ./src/assets/popup.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_popup_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./popup.css */ \"./node_modules/css-loader/dist/cjs.js!./src/assets/popup.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_popup_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_popup_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_popup_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_popup_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/assets/popup.css?");
 
 /***/ }),
 
@@ -110,13 +140,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/displayCards.js":
+/*!*****************************!*\
+  !*** ./src/displayCards.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// import { likeCreator, likeFetcher } from \"./likes.js\";\n// import recipieCounter from \"./recipieCounter.js\";\n\nconst recipies = document.querySelector(\".recipies\");\n// const recipesSection = document.querySelector(\"#recipesSection\");\n\nconst displayCards = async () => {\n  fetch(\"https://www.themealdb.com/api/json/v1/1/filter.php?a=British\")\n    .then((response) => response.json())\n    .then((data) => {\n      let card = \"\";\n      data.meals.forEach((meal) => {\n        card += `<div class=\"card\" id=\"${meal.idMeal}\">\n               <div class=\"card-img\">\n                   <img src=\"${meal.strMealThumb}\" alt=\"${meal.strMeal}\">\n               </div>\n               <div class=\"card-info\">\n                   <h2>${meal.strMeal}</h2>\n                   <ul>\n                       <li><button target_id=${meal.idMeal}  class=\"comment-btn\" type=\"button\">Comments</button></li>\n                       <li><button class=\"like-btn\"><i target_id=${meal.idMeal} class=\"fa-regular fa-heart\"></i><span class=\"like-count\">0</span></button></li>\n                   </ul>\n               </div>\n             </div>`;\n      });\n      recipies.innerHTML = card;\n    });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (displayCards);\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/displayCards.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles.css */ \"./src/assets/styles.css\");\n\r\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/styles.css */ \"./src/assets/styles.css\");\n/* harmony import */ var _assets_popup_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/popup.css */ \"./src/assets/popup.css\");\n/* harmony import */ var _displayCards_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./displayCards.js */ \"./src/displayCards.js\");\n// import onready from \"./app.js\";\r\n\r\n\r\n\r\n\r\nwindow.addEventListener(\"DOMContentLoaded\", () => {\r\n  (0,_displayCards_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n  // onready();\r\n});\r\n\n\n//# sourceURL=webpack://foodify_capstone_project/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/images/popup-x-btn.svg":
+/*!*******************************************!*\
+  !*** ./src/assets/images/popup-x-btn.svg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"56f7a0853849f037762c.svg\";\n\n//# sourceURL=webpack://foodify_capstone_project/./src/assets/images/popup-x-btn.svg?");
 
 /***/ })
 
@@ -146,6 +196,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -171,6 +224,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +250,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

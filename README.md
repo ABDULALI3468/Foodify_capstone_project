@@ -3,9 +3,11 @@
 # Fodify capstone project!
 
 > This is a website which showcases the top notch food and its recipes from all over the world from Britian to Australia , from veg to meat. It will take your response in the from of likes and comments.
+> ![](src/assets/images/Capture.PNG)
 
 ## LIVE DEMO
 - [Go checkout the Live Demo](https://abdulali3468.github.io/Foodify_capstone_project/)
+- [Go checkout the Video Demonstration of the project](https://drive.google.com/file/d/1mUtNuJ3_4nAn_-5IV1BurM_Y6Y0Tf2iv/view?usp=sharing)
 
 ## Built With
 

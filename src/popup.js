@@ -11,7 +11,7 @@ import {
   createElement,
   Elements,
 } from './elements.js';
-import { listComments, addComment } from './comment.js';
+import listComments from './comment.js';
 import { RECIPE_URL } from './apis.js';
 
 const listIngredients = async (dataId) => fetch(RECIPE_URL + dataId)
@@ -39,7 +39,6 @@ export const showPopup = async (target) => {
   const dataId = $getAttrib(target, 'target_id');
   const popup = await listIngredients(dataId);
   await listComments(dataId, popup);
-  $select('form', popup).onsubmit = addComment;
 
   wrapper.innerHTML = '';
   wrapper.appendChild(popup);

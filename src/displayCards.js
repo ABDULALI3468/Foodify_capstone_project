@@ -1,4 +1,4 @@
-// import { likeCreator, likeFetcher } from "./likes.js";
+import { likeCreator } from './likes.js';
 // import recipieCounter from "./recipieCounter.js";
 
 const recipies = document.querySelector('.recipies');
@@ -24,6 +24,7 @@ const displayCards = async () => {
              </div>`;
       });
       recipies.innerHTML = card;
+      likeCreator();
     });
 };
 

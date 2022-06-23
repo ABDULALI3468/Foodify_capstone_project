@@ -1,4 +1,5 @@
 /**
+ * eslint-disable
  * @jest-environment jsdom
 */
 import 'isomorphic-fetch';

@@ -37,6 +37,10 @@ body {
   margin-bottom: 40px;
 }
 
+ul {
+  list-style: none;
+}
+
 nav .nav-items {
   background-color: var(--bg-color);
   display: flex;
@@ -50,7 +54,6 @@ nav .nav-items {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  list-style: none;
 }
 
 .item a {
@@ -162,7 +165,6 @@ nav .nav-items {
   display: flex;
   margin-top: 5%;
   justify-content: space-between;
-  list-style: none;
 }
 
 .commentBtn {

@@ -11,20 +11,21 @@ import {
   createElement,
   Elements,
 } from './elements.js';
-import { RECIPE_URL } from './apis.js';
+import { listComments, addComment } from './comment.js';
+import { getDetails } from './apis.js';
 
-const listIngredients = async (dataId) => fetch(RECIPE_URL + dataId)
-  .then((res) => res.json())
-  .then(({ meals }) => {
-    const [recipe] = meals;
-    const popup = renderPopup(recipe);
-    const list1 = $select('.ingredients-list', popup);
+const listIngredients = async (itemId) => {
+  const res = await getDetails(itemId);
+  const [details] = res.meals;
+  const popup = renderPopup(details);
+  const list1 = $select('.ingredients-list', popup);
 
-    filterIngredients(recipe)
-      .forEach(([, value], j) => appendIngredient(recipe[`strMeasure${j + 1}`], value, list1));
+  filterIngredients(details).forEach(
+    ([, desc], j) => appendIngredient(details[`strMeasure${j + 1}`], desc, list1),
+  );
 
-    return popup;
-  });
+  return popup;
+};
 
 export const showPopup = async (target) => {
   toggleOverflow();
@@ -37,9 +38,13 @@ export const showPopup = async (target) => {
 
   const dataId = $getAttrib(target, 'target_id');
   const popup = await listIngredients(dataId);
+  await listComments(dataId, popup);
+  $select('form', popup).onsubmit = addComment;
 
   wrapper.innerHTML = '';
   wrapper.appendChild(popup);
+
+  return popup;
 };
 
 export const closePopup = ({ parentElement }) => {

@@ -16,12 +16,12 @@ import { getDetails } from './apis.js';
 
 const listIngredients = async (itemId) => {
   const res = await getDetails(itemId);
-  const [ details ] = res.meals;
+  const [details] = res.meals;
   const popup = renderPopup(details);
   const list1 = $select('.ingredients-list', popup);
 
   filterIngredients(details).forEach(
-    ([, desc], j) => appendIngredient(details[`strMeasure${j + 1}`], desc, list1)
+    ([, desc], j) => appendIngredient(details[`strMeasure${j + 1}`], desc, list1),
   );
 
   return popup;

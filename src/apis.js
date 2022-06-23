@@ -16,14 +16,15 @@ export const postData = (url, data = {}) => fetch(url, {
 
 export const getComments = async (itemId) => {
   const response = await fetch(`${COMMENT_URL}${itemId}`);
-  return await response.json();
+  return response.json();
 };
 
 export const getDetails = async (itemId) => {
   const response = await fetch(`${RECIPE_URL}${itemId}`);
-  return await response.json();
+  return response.json();
 };
 
 export const postComment = async (comment) => {
-
+  const response = await postData(COMMENT_URL, comment);
+  return response;
 };

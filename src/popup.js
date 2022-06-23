@@ -1,26 +1,23 @@
 import {
-  appendIngredient,
-  filterIngredients,
-  renderPopup,
-  ldsEllipsis,
-  toggleOverflow,
-} from './commons.js';
-import {
   $select,
   $getAttrib,
+  $html,
   createElement,
   Elements,
 } from './elements.js';
-import { listComments, addComment } from './comment.js';
+import Templates from './renderer.js';
 import { getDetails } from './apis.js';
+import { filters } from './helpers.js';
+import { listComments, addComment } from './comment.js';
+import { appendIngredient, toggleOverflow } from './commons.js';
 
 const listIngredients = async (itemId) => {
   const res = await getDetails(itemId);
   const [details] = res.meals;
-  const popup = renderPopup(details);
+  const popup = await Templates.popup.render(details);
   const list1 = $select('.ingredients-list', popup);
 
-  filterIngredients(details).forEach(
+  filters.ingredients(details).forEach(
     ([, desc], j) => appendIngredient(details[`strMeasure${j + 1}`], desc, list1),
   );
 
@@ -30,10 +27,9 @@ const listIngredients = async (itemId) => {
 export const showPopup = async (target) => {
   toggleOverflow();
 
-  const wrapper = createElement('div');
-  wrapper.className = 'popup-wrapper';
+  const wrapper = createElement('div', { classes: 'popup-wrapper' });
 
-  wrapper.appendChild(ldsEllipsis());
+  wrapper.appendChild(await Templates.loader.render());
   Elements.main.appendChild(wrapper);
 
   const dataId = $getAttrib(target, 'target_id');
@@ -41,7 +37,7 @@ export const showPopup = async (target) => {
   await listComments(dataId, popup);
   $select('form', popup).onsubmit = addComment;
 
-  wrapper.innerHTML = '';
+  $html(wrapper, '');
   wrapper.appendChild(popup);
 
   return popup;

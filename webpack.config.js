@@ -10,6 +10,17 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'popup.html',
+      template: './src/popup.html',
+      chunks: ['popup'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'loader.html',
+      template: './src/loader.html',
+      chunks: ['loader'],
     }),
   ],
   output: {
@@ -32,5 +43,10 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  resolve: {
+    fallback: {
+      fs: false,
+    },
   },
 };

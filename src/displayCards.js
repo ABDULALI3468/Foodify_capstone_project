@@ -1,14 +1,14 @@
-import { likeCreator } from './likes.js';
+import { likeCreator, likeFetcher } from "./likes.js";
 // import recipieCounter from "./recipieCounter.js";
 
-const recipies = document.querySelector('.recipies');
+const recipies = document.querySelector(".recipies");
 // const recipesSection = document.querySelector("#recipesSection");
 
 const displayCards = async () => {
-  fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=British')
+  fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=British")
     .then((response) => response.json())
     .then((data) => {
-      let card = '';
+      let card = "";
       data.meals.forEach((meal) => {
         card += `<div class="card" id="${meal.idMeal}">
                <div class="card-img">
@@ -24,6 +24,7 @@ const displayCards = async () => {
              </div>`;
       });
       recipies.innerHTML = card;
+      likeFetcher();
       likeCreator();
     });
 };

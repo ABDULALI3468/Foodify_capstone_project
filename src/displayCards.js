@@ -17,7 +17,7 @@ const displayCards = async () => {
                <div class="card-info">
                    <h2>${meal.strMeal}</h2>
                    <ul>
-                       <li><button target_id=${meal.idMeal}  class="comment-btn" type="button">Comments</button></li>
+                       <li><button target_id=${meal.idMeal}  class="commentBtn" type="button">Comments</button></li>
                        <li><button class="like-btn"><i target_id=${meal.idMeal} class="fa-regular fa-heart"></i><span class="like-count">0</span></button></li>
                    </ul>
                </div>

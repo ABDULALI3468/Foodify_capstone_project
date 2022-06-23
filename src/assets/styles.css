@@ -165,7 +165,7 @@ nav .nav-items {
   list-style: none;
 }
 
-.comment-btn {
+.commentBtn {
   padding: 5% 15%;
   font-family: "Patrick Hand", cursive;
   font-size: 1.3rem;
@@ -177,7 +177,7 @@ nav .nav-items {
   transition: 0.3s;
 }
 
-.comment-btn:hover {
+.commentBtn:hover {
   background-color: #236128;
 }
 

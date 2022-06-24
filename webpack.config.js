@@ -24,6 +24,11 @@ module.exports = {
       template: './src/loader.html',
       chunks: ['loader'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'item.html',
+      template: './src/item.html',
+      chunks: ['item'],
+    }),
   ],
   output: {
     filename: 'index.js',

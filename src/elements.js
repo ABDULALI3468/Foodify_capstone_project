@@ -7,7 +7,9 @@ export const createElement = (tagName, options = {}) => {
   return element;
 };
 
-export const $select = (selector, parentTree = document.body) => parentTree.querySelector(selector);
+export const $select = (selector, lookup = document.body) => lookup.querySelector(selector);
+
+export const $selectAll = (selector, lookup = document.body) => lookup.querySelectorAll(selector);
 
 export const $getAttrib = ($element, attribute) => {
   if (typeof $element === 'string') $element = $select($element);

@@ -1,14 +1,15 @@
 import './assets/styles.css';
 import './assets/popup.css';
 import './assets/images/bannercapstone.png';
+import { $select } from './elements.js';
 import displayCards from './displayCards.js';
 import onready from './app.js';
 
-const contact = document.querySelector('.contact');
-const cardContainer = document.querySelector('.card_container');
-const contactSection = document.querySelector('#contactSection');
-const recipesSection = document.querySelector('#recipesSection');
-const footer = document.querySelector('.footer');
+const contact = $select('.contact');
+const cardContainer = $select('.card_container');
+const contactSection = $select('#contactSection');
+const recipesSection = $select('#recipesSection');
+const footer = $select('.footer');
 
 contactSection.addEventListener('click', () => {
   cardContainer.classList.add('hidden');
@@ -22,7 +23,7 @@ recipesSection.addEventListener('click', () => {
   footer.classList.remove('footerContact');
 });
 
-window.addEventListener('DOMContentLoaded', async () => {
+window.addEventListener('DOMContentLoaded', () => {
   displayCards();
   onready();
   contact.classList.add('hidden');

@@ -1,12 +1,14 @@
 import { createElement, $html, $text } from './elements.js';
 import getTemplate from './get_template.js';
 
-const render = (name, data = {}) => getTemplate(name).then((html) => {
-  const keys = [...html.matchAll(/\$\{([a-zA-Z0-9_]+)\}/g)];
-  keys.forEach(([holder, key]) => { html = html.replace(holder, data[key]); });
+export const injection = (template, data) => {
+  [...template.matchAll(/\$\{([a-zA-Z0-9_]+)\}/g)].forEach(
+    ([holder, key]) => { template = template.replace(holder, data[key]); },
+  );
+  return template;
+};
 
-  return html;
-});
+const render = (name, data = {}) => getTemplate(name).then((html) => injection(html, data));
 
 export default {
   popup: {

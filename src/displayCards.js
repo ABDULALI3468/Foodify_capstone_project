@@ -1,30 +1,23 @@
 import { likeCreator, likeFetcher } from './likes.js';
 import recipieCounter from './recipieCounter.js';
+import getTemplate from './get_template.js';
+import { injection } from './renderer.js';
 import { API_BASE_URLS } from './apis.js';
+import { $html, $select } from './elements.js';
 
-const recipies = document.querySelector('.recipies');
-const recipesSection = document.querySelector('#recipesSection');
+const recipies = $select('.recipies');
+const recipesSection = $select('#recipesSection');
 
 const displayCards = async () => {
+  const cardTemplate = await getTemplate('item');
   fetch(API_BASE_URLS.ITEMS_URL)
     .then((response) => response.json())
     .then((data) => {
       let card = '';
       data.meals.forEach((meal) => {
-        card += `<div class="card" id="${meal.idMeal}">
-               <div class="card-img">
-                   <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-               </div>
-               <div class="card-info">
-                   <h2>${meal.strMeal}</h2>
-                   <ul>
-                       <li><button target_id=${meal.idMeal}  class="commentBtn" type="button">Comments</button></li>
-                       <li><button class="like-btn"><i target_id=${meal.idMeal} class="fa-regular fa-heart"></i><span class="like-count">0</span></button></li>
-                   </ul>
-               </div>
-             </div>`;
+        card += injection(cardTemplate, meal);
       });
-      recipies.innerHTML = card;
+      $html(recipies, card);
       likeFetcher();
       likeCreator();
       recipieCounter(data.meals, recipesSection);

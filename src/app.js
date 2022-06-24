@@ -3,7 +3,7 @@ import { scaleInstructionContainer } from './commons.js';
 
 const onready = () => {
   document.body.addEventListener('click', async ({ target }) => {
-    if (target.classList.contains('trigger')) await showPopup(target);
+    if (target.classList.contains('commentBtn')) await showPopup(target);
     else if (target.classList.contains('popup-x-btn')) closePopup(target);
     else if (target.classList.contains('ec-btn')) scaleInstructionContainer(target);
   });

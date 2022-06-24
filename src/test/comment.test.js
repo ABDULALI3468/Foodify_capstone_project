@@ -2,12 +2,12 @@
  * @jest-environment jsdom
 */
 import 'isomorphic-fetch';
-import { showPopup } from './popup.js';
-import { $select, createElement, Elements } from './elements.js';
-import { getDetails } from './apis.js';
-import { listComments } from './comment.js';
-import { commentCounter } from './commons.js';
-import Templates from './renderer.js';
+import { showPopup } from '../popup.js';
+import { $select, createElement, Elements } from '../elements.js';
+import { getDetails } from '../apis.js';
+import { listComments } from '../comment.js';
+import { commentCounter } from '../commons.js';
+import Templates from '../renderer.js';
 
 beforeEach(() => {
   document.body.innerHTML = '<main></main>';

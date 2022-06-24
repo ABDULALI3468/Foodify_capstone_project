@@ -1,11 +1,12 @@
 import { likeCreator, likeFetcher } from './likes.js';
 import recipieCounter from './recipieCounter.js';
+import { API_BASE_URLS } from './apis.js';
 
 const recipies = document.querySelector('.recipies');
 const recipesSection = document.querySelector('#recipesSection');
 
 const displayCards = async () => {
-  fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=British')
+  fetch(API_BASE_URLS.ITEMS_URL)
     .then((response) => response.json())
     .then((data) => {
       let card = '';

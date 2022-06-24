@@ -22,7 +22,7 @@ export const postData = (url, data = {}) => fetch(url, {
 
 export const getComments = async (itemId) => {
   const response = await fetch(API_BASE_URLS.COMMENTS_URL + itemId);
-  return response.json();
+  return (response.status === 200) ? response.json() : null;
 };
 
 export const getDetails = async (itemId) => {

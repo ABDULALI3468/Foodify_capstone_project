@@ -1,4 +1,4 @@
-import { API_BASE_URLS, postData } from "./apis.js";
+import { API_BASE_URLS, postData } from './apis.js';
 
 export const likeFetcher = async () => {
   const cards = document.querySelectorAll('.card');
@@ -23,7 +23,7 @@ export const likeCreator = async () => {
       e.target.classList.remove('fa-regular');
       e.target.classList.add('fa-solid');
       e.target.nextSibling.innerHTML = Number(e.target.nextSibling.innerHTML) + 1;
-      postData(API_BASE_URLS.LIKES_URL, {item_id: e.target.getAttribute('target_id')});
+      postData(API_BASE_URLS.LIKES_URL, { item_id: e.target.getAttribute('target_id') });
     });
   });
 };

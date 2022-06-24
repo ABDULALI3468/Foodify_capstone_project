@@ -1,7 +1,7 @@
 {
   "name": "foodify_capstone_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "src/index.js",
   "directories": {
     "doc": "docs"
@@ -10,7 +10,8 @@
     "test": "jest",
     "watch": "jest --watchAll",
     "start": "webpack-dev-server --config webpack.config.js --open",
-    "build": "webpack"
+    "build": "webpack",
+    "webhint": "hint http://localhost:8080"
   },
   "repository": {
     "type": "git",
@@ -27,12 +28,13 @@
     "@babel/core": "^7.18.5",
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
+    "@hint/utils-dom": "^2.1.13",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
-    "hint": "^2.0.0",
+    "hint": "^7.0.1",
     "html-webpack-plugin": "^5.5.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^28.1.1",

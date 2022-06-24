@@ -1,11 +1,8 @@
-import {
-  renderComment,
-  sortByDate,
-  flagTrigger,
-  commentCounter,
-} from './commons.js';
+import { flagTrigger, commentCounter } from './commons.js';
 import { $select, $getAttrib } from './elements.js';
 import { getComments, postComment } from './apis.js';
+import { sorters } from './helpers.js';
+import Templates from './renderer.js';
 
 export const addComment = async (event) => {
   event.preventDefault();
@@ -24,8 +21,8 @@ export const addComment = async (event) => {
   if (res.status === 201) {
     self.reset();
     const list2 = self.parentElement.previousElementSibling.lastElementChild;
-    list2.prepend(renderComment({
-      creation_date: (new Date()).toISOString().substring(0, 10),
+    list2.prepend(Templates.comment.render({
+      creation_date: new Date().toISOString().substring(0, 10),
       ...comment,
     }));
     commentCounter(1, list2.previousElementSibling);
@@ -33,12 +30,14 @@ export const addComment = async (event) => {
   flagTrigger(self.lastElementChild);
 };
 
-export const listComments = async (itemId, lookupTree) => {
+export const listComments = async (itemId, lookup) => {
   const response = await getComments(itemId);
 
   if (Array.isArray(response)) {
-    const list2 = $select('.comments-list', lookupTree);
-    commentCounter(response.length, lookupTree);
-    response.sort(sortByDate).forEach((comment) => list2.appendChild(renderComment(comment)));
+    const list2 = $select('.comments-list', lookup);
+    commentCounter(response.length, lookup);
+    response.sort(sorters.comments.byDate).forEach(
+      (comment) => list2.appendChild(Templates.comment.render(comment)),
+    );
   }
 };

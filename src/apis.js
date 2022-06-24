@@ -1,10 +1,16 @@
-const API_ID = '1AkDSb9CeEmOpdltysrI';
+export const API_BASE_ID = '1AkDSb9CeEmOpdltysrI';
 
-const INVOLVEMENT_API = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
+const API_INVOL_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 
-const RECIPE_URL = 'https://themealdb.com/api/json/v1/1/lookup.php?i=';
-
-export const COMMENT_URL = `${INVOLVEMENT_API + API_ID}/comments?item_id=`;
+export const API_BASE_URLS = {
+  ITEM_URL: 'https://themealdb.com/api/json/v1/1/lookup.php?i=',
+  ITEMS_URL: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=British',
+  COMMENTS_URL:
+    `${API_INVOL_URL
+    + API_BASE_ID
+    }/comments?item_id=`,
+  LIKES_URL: `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${API_BASE_ID}/likes`,
+};
 
 export const postData = (url, data = {}) => fetch(url, {
   method: 'POST',
@@ -15,16 +21,16 @@ export const postData = (url, data = {}) => fetch(url, {
 });
 
 export const getComments = async (itemId) => {
-  const response = await fetch(`${COMMENT_URL}${itemId}`);
-  return response.json();
+  const response = await fetch(API_BASE_URLS.COMMENTS_URL + itemId);
+  return (response.status === 200) ? response.json() : null;
 };
 
 export const getDetails = async (itemId) => {
-  const response = await fetch(`${RECIPE_URL}${itemId}`);
+  const response = await fetch(API_BASE_URLS.ITEM_URL + itemId);
   return response.json();
 };
 
 export const postComment = async (comment) => {
-  const response = await postData(COMMENT_URL, comment);
+  const response = await postData(API_BASE_URLS.COMMENTS_URL.replace('?item_id=', ''), comment);
   return response;
 };

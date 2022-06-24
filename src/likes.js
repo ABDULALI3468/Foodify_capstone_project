@@ -1,8 +1,9 @@
-const appId = '1AkDSb9CeEmOpdltysrI';
+import { API_BASE_URLS, postData } from './apis.js';
+
 export const likeFetcher = async () => {
   const cards = document.querySelectorAll('.card');
   const likeCount = document.querySelectorAll('.like-count');
-  await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes`)
+  await fetch(API_BASE_URLS.LIKES_URL)
     .then((response) => response.json())
     .then((json) => {
       cards.forEach((card, index) => {
@@ -22,13 +23,7 @@ export const likeCreator = async () => {
       e.target.classList.remove('fa-regular');
       e.target.classList.add('fa-solid');
       e.target.nextSibling.innerHTML = Number(e.target.nextSibling.innerHTML) + 1;
-      fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/1AkDSb9CeEmOpdltysrI/likes', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          item_id: e.target.getAttribute('target_id'),
-        }),
-      });
+      postData(API_BASE_URLS.LIKES_URL, { item_id: e.target.getAttribute('target_id') });
     });
   });
 };

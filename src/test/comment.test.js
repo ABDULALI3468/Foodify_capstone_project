@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 /**
  * @jest-environment jsdom
 */

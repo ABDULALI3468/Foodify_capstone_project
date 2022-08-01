@@ -7,6 +7,7 @@
   --text-color-2: #23832b;
   --text-color-3: #9cb445;
   --bg-color: #f0f9cf;
+  --main-color: #23abd4;
 }
 
 * {
@@ -68,28 +69,34 @@ nav .nav-items {
   margin: 0 0.75rem;
   font-size: 1rem;
   letter-spacing: 0.5px;
-  color: rgb(49, 49, 49);
   font-weight: 500;
   opacity: 0.9;
-  transition: 0.3s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, var(--text-color-2), var(--text-color-2) 50%, var(--text-color-3) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  width: 50%;
   height: 7px;
   border-radius: 5px;
-  background-color: var(--text-color-3);
   bottom: -10px;
   left: 0;
   z-index: -1;
   opacity: 0;
-  transition: 0.3s;
+  display: block;
+  width: 0;
+  background: var(--text-color-2);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link:hover {
   color: var(--text-color-2);
+  background-position: 0%;
 }
 
 .nav-link:hover::after {
@@ -104,7 +111,7 @@ nav .nav-items {
   padding: 20px;
 }
 
-.footer a {
+.footer div a {
   color: #2a7703;
   text-decoration: none;
   transition: 0.2s;

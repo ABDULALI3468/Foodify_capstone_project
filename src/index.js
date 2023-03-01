@@ -1,6 +1,7 @@
-import './assets/styles.css';
-import './assets/popup.css';
-import './assets/images/bannercapstone.png';
+import './assets/styles/styles.css';
+import './assets/styles/popup.css';
+import './assets/images/desktop-banner.png';
+import './assets/images/mobile-banner.png';
 import displayCards from './displayCards.js';
 import onready from './app.js';
 

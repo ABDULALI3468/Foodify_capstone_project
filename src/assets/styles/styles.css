@@ -32,7 +32,7 @@ header {
 
 .main_img {
   margin-top: 13vh;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -42,6 +42,10 @@ header {
 
 .main_img_desktop {
   display: block;
+}
+
+.tagline {
+  padding: 0.5rem;
 }
 
 .tagline h2 {
@@ -144,6 +148,10 @@ nav .nav-items {
   bottom: 0;
 }
 
+.card_container .cards_wrapper-section {
+  width: 100vw;
+}
+
 .card_container .recipies {
   display: flex;
   flex-direction: row;
@@ -153,7 +161,7 @@ nav .nav-items {
 }
 
 .card {
-  width: 300px;
+  max-width: 300px;
   height: auto;
   margin: 40px;
   display: flex;
@@ -297,6 +305,6 @@ nav .nav-items {
   }
 
   .card {
-    width: 250px;
+    max-width: 250px;
   }
 }
